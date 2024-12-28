@@ -1,0 +1,103 @@
+export const ExtraData = () => {
+  const extraDataUsers = [
+    // page 1:
+    {
+      skill: "Motion Graphics",
+      phone: "+1 (478) 098-2342",
+      location: "New York, USA",
+      birthday: "17-05-1980",
+      rating: 9.6,
+      gender: "Male",
+    },
+    {
+      skill: "Creative Writing",
+      phone: "+1 (674) 095-7654",
+      location: "California, USA",
+      birthday: "01-07-1985",
+      rating: 7.8,
+      gender: "Female",
+    },
+    {
+      skill: "Public Speaking",
+      phone: "+1 (674) 095-7654",
+      location: "Texas, USA",
+      birthday: "08-01-1987",
+      rating: 7.8,
+      gender: "Female",
+    },
+    {
+      skill: "Market Research",
+      phone: "+1 (674) 095-7654",
+      location: "New York, USA",
+      birthday: "01-05-1965",
+      rating: 9.8,
+      gender: "Male",
+    },
+    {
+      skill: "Entrepreneurship",
+      phone: "+1 (674) 095-7654",
+      location: "Alaska, USA",
+      birthday: "06-12-1989",
+      rating: 9.8,
+      gender: "Male",
+    },
+    {
+      skill: "Graphic Design",
+      phone: "+1 (674) 095-7654",
+      location: "Puerto Rico, USA",
+      birthday: "23-10-1987",
+      rating: 8.1,
+      gender: "Male",
+    },
+    // page 2:
+    {
+      skill: "3D Rendering",
+      phone: "+1 (934) 537-8732",
+      location: "California, USA",
+      birthday: "14-11-1988",
+      rating: 8.7,
+      gender: "Female",
+    },
+    {
+      skill: "UI/UX Design",
+      phone: "+1 (904) 759-8987",
+      location: "Texas, USA",
+      birthday: "18-03-1993",
+      rating: 9.1,
+      gender: "Male",
+    },
+    {
+      skill: "Web Development",
+      phone: "+1 (911) 099-3432",
+      location: "Puerto Rico, USA",
+      birthday: "26-10-1990",
+      rating: 8.9,
+      gender: "Male",
+    },
+    {
+      skill: "Cybersecurity",
+      phone: "+1 (090) 095-4554",
+      location: "Washington, USA",
+      birthday: "23-02-1990",
+      rating: 7.9,
+      gender: "Male",
+    },
+    {
+      skill: "Database Management",
+      phone: "+1 (767) 343-8932",
+      location: "New York, USA",
+      birthday: "01-02-1989",
+      rating: 8.1,
+      gender: "Male",
+    },
+    {
+      skill: "Digital Marketing",
+      phone: "+1 (666) 095-9988",
+      location: "Alaska, USA",
+      birthday: "15-08-1991",
+      rating: 8.3,
+      gender: "Female",
+    },
+  ];
+  return { extraDataUsers };
+};
