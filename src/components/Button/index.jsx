@@ -1,5 +1,16 @@
-const Button = (Props) => {
-  const { title, logo, onClick, disable, p, hiddenT, hiddenL, bg, w } = Props;
+const Button = (props) => {
+  const {
+    title = "Button",
+    logo = null,
+    onClick = () => {},
+    disable = false,
+    p = "px-4",
+    hiddenT = "",
+    hiddenL = "",
+    bg = "bg-blue-500", // default value untuk bg
+    w = "full", // default value untuk w
+  } = props;
+
   return (
     <button
       className={`flex items-center justify-center gap-1 ${p} py-1 ${bg} rounded-lg border-2 border-blue-500 font-medium w-${w} ${

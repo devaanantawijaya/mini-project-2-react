@@ -26,19 +26,26 @@ const Navbar = () => {
       <div>
         <div className="flex items-center gap-20 p-5 shadow-xl w-fit rounded-xl bg-slate-100">
           <div className="block text-4xl text-blue-500 md:hidden">
-            <button onClick={handleHamburger}>
+            <button onClick={handleHamburger} data-testid="hamburger-button">
               <GiHamburgerMenu />
             </button>
           </div>
           <Link to={"/"}>
-            <FaMedium className="text-4xl text-blue-500 rounded-xl" />
+            <FaMedium
+              className="text-4xl text-blue-500 rounded-xl"
+              data-testid="medium-logo"
+            />
           </Link>
           <div className="hidden md:block">
             <ul className="flex justify-center font-semibold gap-7">
-              <Link to={"/"}>
+              <Link to={"/"} className="nav-link" data-testid="home-link">
                 <li className="hover:text-blue-500">Home</li>
               </Link>
-              <Link to={"/member"}>
+              <Link
+                to={"/member"}
+                className="nav-link"
+                data-testid="members-link"
+              >
                 <li className="hover:text-blue-500">Members</li>
               </Link>
             </ul>
@@ -52,10 +59,17 @@ const Navbar = () => {
                 hiddenL="hidden"
                 bg="bg-white"
                 onClick={handleLogout}
+                data-testid="logout-button"
               />
             ) : (
               <Link to={"/login"}>
-                <Button title="Login" p="px-4" hiddenL="hidden" bg="bg-white" />
+                <Button
+                  title="Login"
+                  p="px-4"
+                  hiddenL="hidden"
+                  bg="bg-white"
+                  data-testid="login-button"
+                />
               </Link>
             )}
           </div>
@@ -64,12 +78,13 @@ const Navbar = () => {
           className={`${
             isHamburger ? "block" : "hidden"
           } md:hidden duration-300`}
+          data-testid="mobile-menu"
         >
           <ul className="flex flex-col justify-start gap-3 px-5 py-3 mt-5 font-semibold shadow-xl bg-slate-100 rounded-xl">
-            <Link to={"/"}>
+            <Link to={"/"} data-testid="home-link">
               <li className="hover:text-blue-500">Home</li>
             </Link>
-            <Link to={"/member"}>
+            <Link to={"/member"} data-testid="members-link">
               <li className="hover:text-blue-500">Members</li>
             </Link>
           </ul>

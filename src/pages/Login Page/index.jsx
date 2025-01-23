@@ -25,6 +25,7 @@ const LoginPage = () => {
   };
 
   const handleLogin = async () => {
+    
     setLoading(true);
 
     try {
@@ -39,7 +40,9 @@ const LoginPage = () => {
       }, 1500);
     } catch (error) {
       console.log(error.response);
-      setError(error.response.data.error);
+      setError(
+        error.response ? error.response.data.error : "An unknown error occurred"
+      );
     } finally {
       setLoading(false);
     }
